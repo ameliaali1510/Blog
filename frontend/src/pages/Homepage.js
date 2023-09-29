@@ -38,7 +38,7 @@ const Homepage = () => {
         </div>
         </div>
         <div className="footer">
-        © 2023 Blog Name. All Rights Reserved.
+        © 2023 TheOmniBlogiverse. All Rights Reserved.
         </div>
         </div>
    

@@ -19,7 +19,7 @@ const Navbar = () => {
 
                     {!isLoading && !user && (
                         <button className="nav-btn" onClick={() => loginWithRedirect()}>
-                            log in
+                            log in/Create Account
                         </button>
                     )}
                     {!isLoading && user && (
