@@ -2,9 +2,11 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { getBlog } from "../api/blog api/getBlog"
 import { updateBlog } from "../api/blog api/updateBlog"
+import { useNavigate } from 'react-router-dom';
 
 const EditBlog = () => {
     const { id } = useParams()
+    const navigate = useNavigate()
     const [blogUpdate, setBlogUpdate] = useState({})
     const [userInput, setUserInput] = useState('')
     const [selectedField, setSelectedField] = useState('')
@@ -16,6 +18,7 @@ const EditBlog = () => {
             let response = await updateBlog(updatedBlog)
             console.log(response)
             alert('Edited item')
+            navigate('/')
         }
     }
 
